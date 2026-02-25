@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Die Fremde Reinheit — Ein Crossover-Universum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ash particle effect -->
+  <div class="ash-field" id="ashField"></div>
+
+  <div class="page-wrapper">
+
+    <header class="site-header">
+      <div class="site-id"><a href="index.html">Die Fremde Reinheit</a></div>
+      <nav class="site-nav">
+        <a href="rahmenordnung.html">Rahmenordnung</a>
+        <a href="erzaehlungen.html">Erzählungen</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Die Fremde Reinheit</h1>
+      <p class="tagline">Wenn zwei Imperien aufeinandertreffen, die einander nicht verstehen können.</p>
+      <div class="rule"></div>
+    </section>
+
+    <section class="intro">
+
+      <p>Der Raum öffnete sich wie eine schlecht verheilte Narbe. Aus ihr glitt ein Schiff, dessen Form keinem bekannten Prinzip folgte. Der Krieg begann, ohne dass jemand ihn verstand.</p>
+
+      <p>Dieses Projekt erzählt von dieser Kollision — nicht aus der Perspektive der Mächtigen, sondern aus der Sicht derer, die dazwischen stehen. Soldaten, Zivilisten, Maschinen. Menschen, die nie dafür gebaut waren, zu verstehen, was über sie hereinbricht.</p>
+
+      <hr>
+
+      <h2>Struktur</h2>
+
+      <p>Die Seite trennt zwischen dem, was das Universum <em>ist</em>, und dem, was darin <em>geschieht</em>. Die Rahmenordnung beschreibt die Regeln der Kollision. Die Erzählungen zeigen, wie sie sich anfühlt.</p>
+
+      <div class="card-grid">
+        <a href="rahmenordnung.html" class="card">
+          <div class="card-label">Framework</div>
+          <div class="card-title">Rahmenordnung</div>
+          <div class="card-desc">Die Regeln des Risses. Fraktionen, Kräfteverhältnisse, und warum dieser Krieg nicht gewonnen werden kann.</div>
+        </a>
+        <a href="erzaehlungen.html" class="card">
+          <div class="card-label">Narrativ</div>
+          <div class="card-title">Erzählungen</div>
+          <div class="card-desc">Kapitel aus dem Inneren der Kollision. Geschrieben von denen, die es gesehen haben.</div>
+        </a>
+      </div>
+
+      <hr>
+
+      <h2>Prinzipien</h2>
+
+      <p><strong>Perspektive von unten.</strong> Die Erzählungen folgen nicht den Helden und nicht den Göttern. Sie folgen den Übriggebliebenen — den Stormtroopern, den Schweißern, den Servitoren, die nie gefragt wurden.</p>
+
+      <p><strong>Rahmen vor Erzählung.</strong> Das Universum hat Regeln. Die Erzählungen bewegen sich innerhalb dieser Regeln, brechen sie aber nicht. Jede Geschichte muss in der Rahmenordnung verankert sein.</p>
+
+      <p><strong>Sensorische Wahrheit.</strong> Nicht beschreiben, was passiert. Beschreiben, wie es riecht, schmeckt, sich anfühlt. Der Leser soll nicht zusehen — er soll drin sein.</p>
+
+      <hr>
+
+      <h2>Status</h2>
+
+      <p>Dieses Projekt befindet sich in der Entwicklung. Die erste Erzählung — <a href="erzaehlungen.html"><em>Die Fremde Reinheit</em></a> — umfasst einen Prolog, fünf Kapitel und einen Epilog. Die Rahmenordnung wird parallel geschärft.</p>
+
+      <div class="disclaimer">
+        <strong>Disclaimer</strong><br>
+        This is a non-commercial fan project. All Warhammer 40,000 elements are the intellectual property of Games Workshop Ltd. All Star Wars elements are the intellectual property of Lucasfilm / Disney. This site generates no revenue and claims no ownership of these properties. It exists solely as a creative exercise and tribute by fans, for fans.
+      </div>
+
+    </section>
+
+    <footer class="site-footer">
+      Die Fremde Reinheit · Ein Crossover-Universum von M.C.<br>
+      Rahmenordnung und Erzählungen · Fan-made · Non-commercial
+    </footer>
+
+  </div>
+
+  <script>
+    // Generate ash particles
+    const field = document.getElementById('ashField');
+    const count = 25;
+    for (let i = 0; i < count; i++) {
+      const p = document.createElement('div');
+      p.className = 'ash-particle';
+      p.style.left = Math.random() * 100 + '%';
+      p.style.animationDuration = (12 + Math.random() * 18) + 's';
+      p.style.animationDelay = (Math.random() * 15) + 's';
+      p.style.width = (1 + Math.random() * 2) + 'px';
+      p.style.height = p.style.width;
+      field.appendChild(p);
+    }
+  </script>
+
+</body>
+</html>
