@@ -21,7 +21,7 @@ Erzählt aus der Perspektive derer, die dazwischen stehen.
     ├── kapitel-ii.html
     ├── kapitel-iii.html
     ├── kapitel-iv.html
-    ├── kapitel-v.html
+    ├── ...
     └── epilog.html
 ```
 
